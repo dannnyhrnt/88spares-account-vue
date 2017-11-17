@@ -1,0 +1,82 @@
+91145f0a2aa1513a203d463261ad4d88
+'use strict';
+// Template version: 1.2.3
+// see http://vuejs-templates.github.io/webpack for documentation.
+
+var path = require('path');
+
+module.exports = {
+  dev: {
+
+    // Paths
+    assetsSubDirectory: 'static',
+    assetsPublicPath: '/',
+    proxyTable: {},
+
+    // Various Dev Server settings
+    host: 'localhost', // can be overwritten by process.env.HOST
+    port: 8080, // can be overwritten by process.env.HOST, if port is in use, a free one will be determined
+    autoOpenBrowser: false,
+    errorOverlay: true,
+    notifyOnErrors: true,
+    poll: false, // https://webpack.js.org/configuration/dev-server/#devserver-watchoptions-
+
+    // Use Eslint Loader?
+    // If true, your code will be linted during bundling and
+    // linting errors and warnings will be shown in the console.
+    useEslint: true,
+    // If true, eslint errors and warnings will also be shown in the error overlay
+    // in the browser.
+    showEslintErrorsInOverlay: false,
+
+    /**
+                                       * Source Maps
+                                       */
+
+    // https://webpack.js.org/configuration/devtool/#development
+    devtool: 'eval-source-map',
+
+    // If you have problems debugging vue-files in devtools,
+    // set this to false - it *may* help
+    // https://vue-loader.vuejs.org/en/options.html#cachebusting
+    cacheBusting: true,
+
+    // CSS Sourcemaps off by default because relative paths are "buggy"
+    // with this option, according to the CSS-Loader README
+    // (https://github.com/webpack/css-loader#sourcemaps)
+    // In our experience, they generally work as expected,
+    // just be aware of this issue when enabling this option.
+    cssSourceMap: false,
+    apihost: 'http://127.0.0.1:8000' },
+
+
+  build: {
+    // Template for index.html
+    index: path.resolve(__dirname, '../dist/index.html'),
+
+    // Paths
+    assetsRoot: path.resolve(__dirname, '../dist'),
+    assetsSubDirectory: 'static',
+    assetsPublicPath: '/',
+
+    /**
+                            * Source Maps
+                            */
+
+    productionSourceMap: true,
+    // https://webpack.js.org/configuration/devtool/#production
+    devtool: '#source-map',
+
+    // Gzip off by default as many popular static hosts such as
+    // Surge or Netlify already gzip all static assets for you.
+    // Before setting to `true`, make sure to:
+    // npm install --save-dev compression-webpack-plugin
+    productionGzip: false,
+    productionGzipExtensions: ['js', 'css'],
+
+    // Run the build command with an extra argument to
+    // View the bundle analyzer report after build finishes:
+    // `npm run build --report`
+    // Set to `true` or `false` to always turn it on or off
+    bundleAnalyzerReport: process.env.npm_config_report } };
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImluZGV4LmpzIl0sIm5hbWVzIjpbInBhdGgiLCJyZXF1aXJlIiwibW9kdWxlIiwiZXhwb3J0cyIsImRldiIsImFzc2V0c1N1YkRpcmVjdG9yeSIsImFzc2V0c1B1YmxpY1BhdGgiLCJwcm94eVRhYmxlIiwiaG9zdCIsInBvcnQiLCJhdXRvT3BlbkJyb3dzZXIiLCJlcnJvck92ZXJsYXkiLCJub3RpZnlPbkVycm9ycyIsInBvbGwiLCJ1c2VFc2xpbnQiLCJzaG93RXNsaW50RXJyb3JzSW5PdmVybGF5IiwiZGV2dG9vbCIsImNhY2hlQnVzdGluZyIsImNzc1NvdXJjZU1hcCIsImFwaWhvc3QiLCJidWlsZCIsImluZGV4IiwicmVzb2x2ZSIsIl9fZGlybmFtZSIsImFzc2V0c1Jvb3QiLCJwcm9kdWN0aW9uU291cmNlTWFwIiwicHJvZHVjdGlvbkd6aXAiLCJwcm9kdWN0aW9uR3ppcEV4dGVuc2lvbnMiLCJidW5kbGVBbmFseXplclJlcG9ydCIsInByb2Nlc3MiLCJlbnYiLCJucG1fY29uZmlnX3JlcG9ydCJdLCJtYXBwaW5ncyI6IkFBQUE7QUFDQTtBQUNBOztBQUVBLElBQU1BLE9BQU9DLFFBQVEsTUFBUixDQUFiOztBQUVBQyxPQUFPQyxPQUFQLEdBQWlCO0FBQ2ZDLE9BQUs7O0FBRUg7QUFDQUMsd0JBQW9CLFFBSGpCO0FBSUhDLHNCQUFrQixHQUpmO0FBS0hDLGdCQUFZLEVBTFQ7O0FBT0g7QUFDQUMsVUFBTSxXQVJILEVBUWdCO0FBQ25CQyxVQUFNLElBVEgsRUFTUztBQUNaQyxxQkFBaUIsS0FWZDtBQVdIQyxrQkFBYyxJQVhYO0FBWUhDLG9CQUFnQixJQVpiO0FBYUhDLFVBQU0sS0FiSCxFQWFVOztBQUViO0FBQ0E7QUFDQTtBQUNBQyxlQUFXLElBbEJSO0FBbUJIO0FBQ0E7QUFDQUMsK0JBQTJCLEtBckJ4Qjs7QUF1Qkg7Ozs7QUFJQTtBQUNBQyxhQUFTLGlCQTVCTjs7QUE4Qkg7QUFDQTtBQUNBO0FBQ0FDLGtCQUFjLElBakNYOztBQW1DSDtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0FDLGtCQUFjLEtBeENYO0FBeUNIQyxhQUFTLHVCQXpDTixFQURVOzs7QUE2Q2ZDLFNBQU87QUFDTDtBQUNBQyxXQUFPckIsS0FBS3NCLE9BQUwsQ0FBYUMsU0FBYixFQUF3QixvQkFBeEIsQ0FGRjs7QUFJTDtBQUNBQyxnQkFBWXhCLEtBQUtzQixPQUFMLENBQWFDLFNBQWIsRUFBd0IsU0FBeEIsQ0FMUDtBQU1MbEIsd0JBQW9CLFFBTmY7QUFPTEMsc0JBQWtCLEdBUGI7O0FBU0w7Ozs7QUFJQW1CLHlCQUFxQixJQWJoQjtBQWNMO0FBQ0FULGFBQVMsYUFmSjs7QUFpQkw7QUFDQTtBQUNBO0FBQ0E7QUFDQVUsb0JBQWdCLEtBckJYO0FBc0JMQyw4QkFBMEIsQ0FBQyxJQUFELEVBQU8sS0FBUCxDQXRCckI7O0FBd0JMO0FBQ0E7QUFDQTtBQUNBO0FBQ0FDLDBCQUFzQkMsUUFBUUMsR0FBUixDQUFZQyxpQkE1QjdCLEVBN0NRLEVBQWpCIiwiZmlsZSI6ImluZGV4LmpzIiwic291cmNlc0NvbnRlbnQiOlsiJ3VzZSBzdHJpY3QnXG4vLyBUZW1wbGF0ZSB2ZXJzaW9uOiAxLjIuM1xuLy8gc2VlIGh0dHA6Ly92dWVqcy10ZW1wbGF0ZXMuZ2l0aHViLmlvL3dlYnBhY2sgZm9yIGRvY3VtZW50YXRpb24uXG5cbmNvbnN0IHBhdGggPSByZXF1aXJlKCdwYXRoJylcblxubW9kdWxlLmV4cG9ydHMgPSB7XG4gIGRldjoge1xuXG4gICAgLy8gUGF0aHNcbiAgICBhc3NldHNTdWJEaXJlY3Rvcnk6ICdzdGF0aWMnLFxuICAgIGFzc2V0c1B1YmxpY1BhdGg6ICcvJyxcbiAgICBwcm94eVRhYmxlOiB7fSxcblxuICAgIC8vIFZhcmlvdXMgRGV2IFNlcnZlciBzZXR0aW5nc1xuICAgIGhvc3Q6ICdsb2NhbGhvc3QnLCAvLyBjYW4gYmUgb3ZlcndyaXR0ZW4gYnkgcHJvY2Vzcy5lbnYuSE9TVFxuICAgIHBvcnQ6IDgwODAsIC8vIGNhbiBiZSBvdmVyd3JpdHRlbiBieSBwcm9jZXNzLmVudi5IT1NULCBpZiBwb3J0IGlzIGluIHVzZSwgYSBmcmVlIG9uZSB3aWxsIGJlIGRldGVybWluZWRcbiAgICBhdXRvT3BlbkJyb3dzZXI6IGZhbHNlLFxuICAgIGVycm9yT3ZlcmxheTogdHJ1ZSxcbiAgICBub3RpZnlPbkVycm9yczogdHJ1ZSxcbiAgICBwb2xsOiBmYWxzZSwgLy8gaHR0cHM6Ly93ZWJwYWNrLmpzLm9yZy9jb25maWd1cmF0aW9uL2Rldi1zZXJ2ZXIvI2RldnNlcnZlci13YXRjaG9wdGlvbnMtXG5cbiAgICAvLyBVc2UgRXNsaW50IExvYWRlcj9cbiAgICAvLyBJZiB0cnVlLCB5b3VyIGNvZGUgd2lsbCBiZSBsaW50ZWQgZHVyaW5nIGJ1bmRsaW5nIGFuZFxuICAgIC8vIGxpbnRpbmcgZXJyb3JzIGFuZCB3YXJuaW5ncyB3aWxsIGJlIHNob3duIGluIHRoZSBjb25zb2xlLlxuICAgIHVzZUVzbGludDogdHJ1ZSxcbiAgICAvLyBJZiB0cnVlLCBlc2xpbnQgZXJyb3JzIGFuZCB3YXJuaW5ncyB3aWxsIGFsc28gYmUgc2hvd24gaW4gdGhlIGVycm9yIG92ZXJsYXlcbiAgICAvLyBpbiB0aGUgYnJvd3Nlci5cbiAgICBzaG93RXNsaW50RXJyb3JzSW5PdmVybGF5OiBmYWxzZSxcblxuICAgIC8qKlxuICAgICAqIFNvdXJjZSBNYXBzXG4gICAgICovXG5cbiAgICAvLyBodHRwczovL3dlYnBhY2suanMub3JnL2NvbmZpZ3VyYXRpb24vZGV2dG9vbC8jZGV2ZWxvcG1lbnRcbiAgICBkZXZ0b29sOiAnZXZhbC1zb3VyY2UtbWFwJyxcblxuICAgIC8vIElmIHlvdSBoYXZlIHByb2JsZW1zIGRlYnVnZ2luZyB2dWUtZmlsZXMgaW4gZGV2dG9vbHMsXG4gICAgLy8gc2V0IHRoaXMgdG8gZmFsc2UgLSBpdCAqbWF5KiBoZWxwXG4gICAgLy8gaHR0cHM6Ly92dWUtbG9hZGVyLnZ1ZWpzLm9yZy9lbi9vcHRpb25zLmh0bWwjY2FjaGVidXN0aW5nXG4gICAgY2FjaGVCdXN0aW5nOiB0cnVlLFxuXG4gICAgLy8gQ1NTIFNvdXJjZW1hcHMgb2ZmIGJ5IGRlZmF1bHQgYmVjYXVzZSByZWxhdGl2ZSBwYXRocyBhcmUgXCJidWdneVwiXG4gICAgLy8gd2l0aCB0aGlzIG9wdGlvbiwgYWNjb3JkaW5nIHRvIHRoZSBDU1MtTG9hZGVyIFJFQURNRVxuICAgIC8vIChodHRwczovL2dpdGh1Yi5jb20vd2VicGFjay9jc3MtbG9hZGVyI3NvdXJjZW1hcHMpXG4gICAgLy8gSW4gb3VyIGV4cGVyaWVuY2UsIHRoZXkgZ2VuZXJhbGx5IHdvcmsgYXMgZXhwZWN0ZWQsXG4gICAgLy8ganVzdCBiZSBhd2FyZSBvZiB0aGlzIGlzc3VlIHdoZW4gZW5hYmxpbmcgdGhpcyBvcHRpb24uXG4gICAgY3NzU291cmNlTWFwOiBmYWxzZSxcbiAgICBhcGlob3N0OiAnaHR0cDovLzEyNy4wLjAuMTo4MDAwJ1xuICB9LFxuICBcbiAgYnVpbGQ6IHtcbiAgICAvLyBUZW1wbGF0ZSBmb3IgaW5kZXguaHRtbFxuICAgIGluZGV4OiBwYXRoLnJlc29sdmUoX19kaXJuYW1lLCAnLi4vZGlzdC9pbmRleC5odG1sJyksXG5cbiAgICAvLyBQYXRoc1xuICAgIGFzc2V0c1Jvb3Q6IHBhdGgucmVzb2x2ZShfX2Rpcm5hbWUsICcuLi9kaXN0JyksXG4gICAgYXNzZXRzU3ViRGlyZWN0b3J5OiAnc3RhdGljJyxcbiAgICBhc3NldHNQdWJsaWNQYXRoOiAnLycsXG5cbiAgICAvKipcbiAgICAgKiBTb3VyY2UgTWFwc1xuICAgICAqL1xuXG4gICAgcHJvZHVjdGlvblNvdXJjZU1hcDogdHJ1ZSxcbiAgICAvLyBodHRwczovL3dlYnBhY2suanMub3JnL2NvbmZpZ3VyYXRpb24vZGV2dG9vbC8jcHJvZHVjdGlvblxuICAgIGRldnRvb2w6ICcjc291cmNlLW1hcCcsXG4gICAgXG4gICAgLy8gR3ppcCBvZmYgYnkgZGVmYXVsdCBhcyBtYW55IHBvcHVsYXIgc3RhdGljIGhvc3RzIHN1Y2ggYXNcbiAgICAvLyBTdXJnZSBvciBOZXRsaWZ5IGFscmVhZHkgZ3ppcCBhbGwgc3RhdGljIGFzc2V0cyBmb3IgeW91LlxuICAgIC8vIEJlZm9yZSBzZXR0aW5nIHRvIGB0cnVlYCwgbWFrZSBzdXJlIHRvOlxuICAgIC8vIG5wbSBpbnN0YWxsIC0tc2F2ZS1kZXYgY29tcHJlc3Npb24td2VicGFjay1wbHVnaW5cbiAgICBwcm9kdWN0aW9uR3ppcDogZmFsc2UsXG4gICAgcHJvZHVjdGlvbkd6aXBFeHRlbnNpb25zOiBbJ2pzJywgJ2NzcyddLFxuICAgIFxuICAgIC8vIFJ1biB0aGUgYnVpbGQgY29tbWFuZCB3aXRoIGFuIGV4dHJhIGFyZ3VtZW50IHRvXG4gICAgLy8gVmlldyB0aGUgYnVuZGxlIGFuYWx5emVyIHJlcG9ydCBhZnRlciBidWlsZCBmaW5pc2hlczpcbiAgICAvLyBgbnBtIHJ1biBidWlsZCAtLXJlcG9ydGBcbiAgICAvLyBTZXQgdG8gYHRydWVgIG9yIGBmYWxzZWAgdG8gYWx3YXlzIHR1cm4gaXQgb24gb3Igb2ZmXG4gICAgYnVuZGxlQW5hbHl6ZXJSZXBvcnQ6IHByb2Nlc3MuZW52Lm5wbV9jb25maWdfcmVwb3J0XG4gIH1cbn1cbiJdfQ==
