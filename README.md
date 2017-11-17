@@ -1,6 +1,10 @@
-# account-vue
+# 88spares-account-vue
 
-> A Vue.js project
+1. clone this repo
+2. cd 88spares-account-vue
+3. run "npm install"
+4. run "npm run dev"
+5. open browser and go to "http://localhost:8080"
 
 ## Build Setup
 
